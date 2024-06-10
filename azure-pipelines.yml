@@ -6,7 +6,8 @@
 trigger:
 - master
 
-pool: 'Azure Pipelines'
+pool: 
+  name: 'Azure Pipelines'
 
 steps:
 - task: NodeTool@0
