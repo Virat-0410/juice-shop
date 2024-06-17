@@ -6,6 +6,12 @@
 trigger:
 - master
 
+pool:
+  name: 'Azure Pipelines'
+  demands:
+    - agent.name -equals 'Hosted Agent'
+
+
 steps:
 - task: NodeTool@0
   inputs:
