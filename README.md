@@ -107,7 +107,7 @@ For a detailed introduction, full list of features and architecture overview ple
 
 1. Install [Docker](https://www.docker.com)
 2. Run `docker pull bkimminich/juice-shop`
-3. Run `docker run --rm -p 3000:3000 bkimminich/juice-shop`
+3. Run `docker run --rm -p 127.0.0.1:3000:3000 bkimminich/juice-shop`
 4. Browse to <http://localhost:3000> (on macOS and Windows browse to
    <http://192.168.99.100:3000> if you are using docker-machine instead of the native docker installation)
 
@@ -201,16 +201,15 @@ OWASP Juice Shop officially supports the following versions of
 [node.js LTS schedule](https://github.com/nodejs/LTS) as close as possible. Docker images and packaged distributions are
 offered accordingly.
 
-| node.js | Supported            | Tested                                                       | [Packaged Distributions](#packaged-distributions) | [Docker images](#docker-container) from `master` | [Docker images](#docker-container) from `develop` |
-|:--------|:---------------------|:-------------------------------------------------------------|:--------------------------------------------------|:-------------------------------------------------|:--------------------------------------------------|
-| 21.x    | :x:                  | :x:                                                          |                                                   |                                                  |                                                   |
-| 20.x    | :heavy_check_mark:   | :heavy_check_mark:                                           | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                  |                                                   |
-| 20.6.0  | :x:                  | :bug: https://github.com/angular/angular-cli/issues/25782 |                                                   |                                                  |                                                   |
-| 19.x    | (:heavy_check_mark:) | :x:                                                          |                                                   |                                                  |                                                   |
-| 18.x    | :heavy_check_mark:   | :heavy_check_mark:                                           | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     | `latest` (`linux/amd64`, `linux/arm64`)          | `snapshot` (`linux/amd64`, `linux/arm64`)         |
-| 17.x    | (:heavy_check_mark:) | :x:                                                          |                                                   |                                                  |                                                   |
-| 16.x    | :heavy_check_mark:   | :heavy_check_mark:                                           | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                  |                                                   |
-| <16.x   | :x:                  | :x:                                                          |                                                   |                                                  |                                                   |
+| node.js | Supported               | Tested                                                    | [Packaged Distributions](#packaged-distributions) | [Docker images](#docker-container) from `master` | [Docker images](#docker-container) from `develop` |
+|:--------|:------------------------|:----------------------------------------------------------|:--------------------------------------------------|:-------------------------------------------------|:--------------------------------------------------|
+| 22.x    | :x:                     | :x:                                                       |                                                   |                                                  |                                                   |
+| 21.x    | ( :heavy_check_mark:  ) | :heavy_check_mark:                                        | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                  |                                                   |
+| 20.x    | :heavy_check_mark:      | :heavy_check_mark:                                        | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     | `latest` (`linux/amd64`, `linux/arm64`)          | `snapshot` (`linux/amd64`, `linux/arm64`)         |
+| 20.6.0  | :x:                     | :bug: https://github.com/angular/angular-cli/issues/25782 |                                                   |                                                  |                                                   |
+| 19.x    | ( :heavy_check_mark: )  | :x:                                                       |                                                   |                                                  |                                                   |
+| 18.x    | :heavy_check_mark:      | :heavy_check_mark:                                        | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                  |                                                   |
+| <18.x   | :x:                     | :x:                                                       |                                                   |                                                  |                                                   |
 
 Juice Shop is automatically tested _only on the latest `.x` minor version_ of each node.js version mentioned above!
 There is no guarantee that older minor node.js releases will always work with Juice Shop!
@@ -317,6 +316,6 @@ For a list of all contributors to the OWASP Juice Shop please visit our
 
 This program is free software: you can redistribute it and/or modify it under the terms of the [MIT license](LICENSE).
 OWASP Juice Shop and any contributions are Copyright © by Bjoern Kimminich & the OWASP Juice Shop contributors
-2014-2023.
+2014-2024.
 
 ![Juice Shop Logo](https://raw.githubusercontent.com/bkimminich/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_400px.png)
